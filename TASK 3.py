@@ -21,3 +21,16 @@ df = pd.DataFrame({"Generic Emails": pd.Series(generic_emails), "Specific Emails
 df.to_csv("separated_emails.csv", index=False)
 print("Emails separated and saved to 'separated_emails.csv'")
 print(df)
+
+
+Output:
+Emails separated and saved to 'separated_emails.csv'
+              Generic Emails            other Emails
+0           info@03beheer.be     nslosman@013net.net
+1  contact@109immobilier.com  john@100foldstudio.org
+2           sales@101cph.com     nslosman@013net.net
+3             info@10hoog.nl  john@100foldstudio.org
+4                        NaN     nslosman@013net.net
+5                        NaN  john@100foldstudio.org
+6                        NaN     nslosman@013net.net
+7                        NaN  john@100foldstudio.org
